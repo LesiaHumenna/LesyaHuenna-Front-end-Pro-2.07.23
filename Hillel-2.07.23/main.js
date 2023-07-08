@@ -12,13 +12,13 @@ function generateList(array) {
     }
     return list;
 }
-const array = [1, 2, [1.1, 1.2], 3, 4, [1.3, 1.4], 5, 6 [1.5, 1.6]];
+const array = [1, 2, [1.1, 1.2], 3, 4, [1.3, 1.4], 5, 6, [1.5, 1.6]];
 
-const arraySrtings = JSON.stringify(array);
+const arraySrtings = JSON.parse(JSON.stringify(array));
 console.log(arraySrtings);
 
 const listContainer = document.getElementById("list-container");
-const generatedList = generateList(array);
+const generatedList = generateList(arraySrtings);
 listContainer.appendChild(generatedList);
 
 function checkProtocol(url) {
@@ -30,4 +30,4 @@ function checkProtocol(url) {
 
 let myUrl = "LesiaHumenna.com";
 myUrl = checkProtocol(myUrl);
-
+console.log(myUrl);
