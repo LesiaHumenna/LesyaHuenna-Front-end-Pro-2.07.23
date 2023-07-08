@@ -12,7 +12,7 @@ function generateList(array) {
     }
     return list;
 }
-const array = [1, 2, [1.1, 1.2, 1.3, 1.4], 3, 4, 5];
+const array = [1, 2, [1.1, 1.2], 3, 4, [1.3, 1.4], 5, 6 [1.5, 1.6]];
 
 const arraySrtings = JSON.stringify(array);
 console.log(arraySrtings);
