@@ -21,13 +21,3 @@ const listContainer = document.getElementById("list-container");
 const generatedList = generateList(arraySrtings);
 listContainer.appendChild(generatedList);
 
-function checkProtocol(url) {
-  if (!/^https?:\/\//i.test(url)) {
-    url = "http://" + url;
-  }
-  return url;
-}
-
-let myUrl = "LesiaHumenna.com";
-myUrl = checkProtocol(myUrl);
-console.log(myUrl);
